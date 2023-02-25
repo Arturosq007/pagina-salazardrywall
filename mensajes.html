@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&family=Rowdies:wght@400;700&display=swap" rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="img/">
+    <link rel="stylesheet" href="iconos.svg/">
+</head>
+<header class="header">
+    <div class="nav">
+        <nav  class="header__nav">
+
+            <div class="nav__main">
+                <h2 class="nav__title">SALAZAR DRYWALL</h2>
+            </div>
+
+            <ul class="nav__ul">
+                <li class="nav__li"> 
+                    <a href="index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__li"> 
+                    <a href="nosotros.html" class="nav__link">Nosotros</a>
+                </li>
+                <li class="nav__li"> 
+                    <a href="galería.html" class="nav__link">Galería</a>
+                </li>
+            </ul>
+
+
+        </nav>
+    </div>
+
+    <div class="mensajes__container">
+        
+        <div class="logo__container">
+            <figure class="logotipo">
+                <img src="img/LOGO.png" class="logo">
+            </figure>
+                
+            <div class="title__texts-galeria">
+                <h1 class="main-title">Mensajes</h1>
+
+                <h2 class="sub-title">En esta sección podras enviar mensajes y realizar consultas sobre el servicio de Drywall</h2>
+            </div>
+            
+        </div>      
+    </div>  
+</header>
+
+<body>
+     
+    <section class="contacto__container">
+
+            <div class="datos">
+                <div class="texts__container">
+                    <p class="text__indication">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perspiciatis maxime facilis quis dolor. Nulla alias,
+                    aut ratione commodi eligendi in officiis aliquid dolor
+                    </p>
+
+                    <div class="texts__datos">
+ 
+                        <div class="texto">
+                            <div class="img__texto">
+                                <img src="./icons.svg/ubication.svg">
+                                <h3>Ubicacanos en:</h3>
+                                <p class="parrafo-mensajes">Asoc. Villa la Juventud  <br>
+                                Mz. C  Lt. 13</p>
+                            </div>
+                        </div>
+
+                        <div class="texto">
+                            <div class="img__texto">
+                                <img src="./icons.svg/telefono.svg">
+                                <h3>Teléfonos de contacto:</h3>
+                                <p class="parrafo-mensajes">+51 952 952 592<br>
+                                    +51 937 165 571</p>
+                            </div>
+                        </div>
+
+                        <div class="texto">
+                            <div class="img__texto">
+                                <img src="./icons.svg/correo.svg">
+                                <h3>Correo Electrónico</h3>
+                                <a href="#" class="parrafo-mensajes">arturosq007@gmail.com</a>
+                            </div>                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="consulta__container">
+
+                <form class="form__contacto" onsubmit="sendEmail(); reset(); return false;">
+                    
+                    <div class="title__form">
+                        <h1>REALIZA TUS CONSULTAS</h1>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form__text">
+                            <input type="text" name="nombre" id="" class="input" placeholder=" " required > 
+                            <label for="nombre" class="label">Nombre</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <div class="form__text">
+                            <input type="email" name="email" id="" class="input" placeholder=" " required> 
+                            <label for="email" class="label">Correo Electronico</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <div class="form__text">
+                            <input type="text" name="celular" id="" class="input" placeholder=" " required>
+                            <label for="celular" class="label">Teléfono</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__text">
+                            <input type="text" name="mensaje" placeholder=" " class="input input-mensaje" id="" required>
+                            <label for="mensaje" class="label">Escriba su mensaje</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="input__enviar">
+                            <button type="submit" class="enviar" value="Enviar mensaje" id="btn">Enviar mensaje</button>
+                        </div>
+                        
+                    </div>  
+                </form>
+
+
+
+
+
+                <!--
+                <form class="form__contacto" method="post">
+                    <div class="title__form">
+                        <h1>REALIZA TUS CONSULTAS</h1>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form__text">
+                            <input type="text" id="name" class="input" placeholder=" " autocomplete="off"> 
+                            <label for="name" class="label">Nombre</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <div class="form__text">
+                            <input type="email" id="email" class="input" placeholder=" " autocomplete="off"> 
+                            <label for="email" class="label">Correo Electronico</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <div class="form__text">
+                            <input type="text" id="celular" class="input" placeholder=" " autocomplete="off">
+                            <label for="celular" class="label">Teléfono</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__text">
+                            <input type="text" placeholder=" " class="input input-mensaje" id="mensaje">
+                            <label for="mensaje" class="label">Escriba su mensaje</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="input__enviar">
+                            <button class="enviar" value="Enviar mensaje" id="btn">Enviar mensaje</button>
+                        </div>
+                        
+                    </div>  
+                </form>
+                -->
+                <div class="ubicacion__container">
+                    <div>
+                        <h1 class="title__ubicacion">Puedes encontrarnos en: </h1>
+                    </div>
+                        
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10728.893111739762!2d-70.24594374945272!3d-18.060601370444147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1676580442546!5m2!1ses!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                        
+                </div>
+            </div>
+      
+    </section>
+ <!--<div class="consulta__container">
+                <div class="form__container">
+                    <form action="" class="form">
+                        <div class="title__form">
+                            <h1>REALIZA TUS CONSULTAS</h1>
+                        </div>
+
+                        <input type="text" class="input" placeholder="Nombre"> 
+                        <input type="email" class="input" placeholder="Correo Electronico">
+                        <input type="text" class="input" placeholder="Teléfono">
+
+                        <textarea placeholder="Escriba su mensaje" class="input__text" cols="30" rows="10"></textarea>
+                        <div class="input__enviar">
+                            <input type="submit" class="enviar" value="Enviar mensaje">
+                        </div>
+                    </form>    
+                </div> 
+            </div>
+       
+    <section class="mapa__container">
+        <div id="map"></div>
+            <script src="/js/mapa.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        </div>                            
+    </section>
+     -->
+    
+    <!--
+                    <div class="form__container">
+                        <form action="" class="form">
+                            <div class="title__form">
+                                <h1>REALIZA TUS CONSULTAS</h1>
+                            </div>
+
+                            <input type="text" class="input" placeholder="Nombre"> 
+                            <input type="email" class="input" placeholder="Correo Electronico">
+                            <input type="text" class="input" placeholder="Teléfono">
+
+                            <textarea placeholder="Escriba su mensaje" class="input__text" cols="30" rows="10"></textarea>
+                            <div class="input__enviar">
+                                <input type="submit" class="enviar" value="Enviar mensaje">
+                            </div>
+                        </form>    
+                    </div>  
+
+                    <div id="map"></div>
+                    
+                        <script src="/js/mapa.js"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+                    
+                    </div>
+                -->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration:1000,
+        once:true
+    });
+    </script>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>
